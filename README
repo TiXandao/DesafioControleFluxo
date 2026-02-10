@@ -1,0 +1,27 @@
+# Desafio: Controle de Fluxo em Java
+
+Repositório criado para o Desafio Controle de Fluxo da DIO, focado em exercitar a lógica de repetição e exceções.
+
+## Sobre o Projeto
+
+O objetivo é um sistema que solicita dois números inteiros, o programa precisa realizar uma contagem baseada na diferença entre esses números, se o primeiro número for maior que o segundo, o sistema tem que impedir a execução e mostrar uma mensagem.
+
+### Funcionalidades:
+- Receber dados via terminal (`Scanner`).
+- Validar parâmetros de entrada.
+- Lançar e tratar exceção customizada (`ParametrosInvalidosException`).
+- Laço de repetição `for` para exibição dos dados.
+
+## Tecnologias e Ambiente
+- **Linguagem:** Java 25 (LTS)
+- **IDE:** Visual Studio Code
+
+## Desafios Técnicos Superados
+Durante este projeto, estudei mais afundo e realizei o troubleshooting de um erro de compatibilidade de versões (`UnsupportedClassVersionError`). O problema ocorria porque o compilador utilizava o Java 25 enquanto o sistema tentava executar com o Java 8.
+**Solução:** - Configuração das Variáveis de Ambiente (`JAVA_HOME`).
+- Atualização do `Path` do sistema para priorizar o JDK mais recente.
+- Limpeza do Workspace do Java no VS Code para recompilação total.
+
+## Estrutura de Arquivos
+- `ControleFluxo.java`: Classe principal com a lógica do sistema.
+- `ParametrosInvalidosException.java`: Classe que representa a exceção de negócio.
